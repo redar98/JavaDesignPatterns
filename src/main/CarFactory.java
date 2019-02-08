@@ -1,5 +1,6 @@
 package main;
 
+import main.Cars.Car;
 import main.Enums.CarType;
 import main.Enums.Manufacturer;
 import main.Manufacturers.AudiCarFactory;
@@ -27,6 +28,7 @@ public class CarFactory {
                 System.out.println("[!] " + type + " factory does not exist yet!");
                 throw new NotImplementedException();
         }
+        PreferencesSingleton.getInstance().appendManufacturedCar(car);
         return car;
     }
 }

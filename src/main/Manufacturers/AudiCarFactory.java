@@ -1,10 +1,10 @@
 package main.Manufacturers;
 
-import main.Car;
+import main.Cars.Car;
 import main.Enums.CarType;
-import main.CarTypes.LuxuryCar;
-import main.CarTypes.SavCar;
-import main.CarTypes.SedanCar;
+import main.Cars.LuxuryCar;
+import main.Cars.SavCar;
+import main.Cars.SedanCar;
 import main.Enums.Manufacturer;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import java.util.Calendar;

@@ -1,6 +1,5 @@
-package main.CarTypes;
+package main.Cars;
 
-import main.Car;
 import main.Enums.CarType;
 import main.Enums.Manufacturer;
 

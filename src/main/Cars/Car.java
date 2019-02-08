@@ -1,4 +1,4 @@
-package main;
+package main.Cars;
 
 import main.Enums.CarType;
 import main.Enums.Manufacturer;
@@ -67,7 +67,7 @@ public abstract class Car {
 
     @Override
     public String toString(){
-        return this.model + "(" + this.type + ") manufactured by " + this.manufacturer + " in " + this.year;
+        return this.manufacturer + " " + this.model + "(" + this.type + ") manufactured in " + this.year;
     }
 }
 

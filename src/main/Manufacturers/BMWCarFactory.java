@@ -1,9 +1,9 @@
 package main.Manufacturers;
 
-import main.*;
-import main.CarTypes.LuxuryCar;
-import main.CarTypes.SavCar;
-import main.CarTypes.SedanCar;
+import main.Cars.Car;
+import main.Cars.LuxuryCar;
+import main.Cars.SavCar;
+import main.Cars.SedanCar;
 import main.Enums.CarType;
 import main.Enums.Manufacturer;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
