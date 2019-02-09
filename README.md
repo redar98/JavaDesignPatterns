@@ -20,7 +20,7 @@ Creational patterns often used in place of direct instantiation with constructor
 ## Singleton Pattern:
 Singleton is mainly used when we want to have only one instance of a class inside JVM. It helps keeping the information in one place and not mess with instances.
 
-Singleton is used in _![PreferencesSingleton.java](/src/main/PreferencesSingleton.java)_ The purpose of this class is to gather all created (instantiated) Cars and Engines since the program start.
+Singleton is used in _[PreferencesSingleton.java](/src/main/PreferencesSingleton.java)_ The purpose of this class is to gather all created (instantiated) Cars and Engines since the program start.
 
 ```java
 public class PreferencesSingleton {
@@ -107,7 +107,7 @@ Engine: M51P34 (W_TYPE-8) PETROL, 437hP
 ---
 
 ## Builder Pattern:
-The builder pattern is mainly useful when you want to build immutable objects (i.e. your class does not have setters). Using builder, we can attach different parts to our objects. Builder pattern can be seen in _![Engine.java](/src/main/Engine.java):_
+The builder pattern is mainly useful when you want to build immutable objects (i.e. your class does not have setters). Using builder, we can attach different parts to our objects. Builder pattern can be seen in _[Engine.java](/src/main/Engine.java):_
 
 ```java
 public class Engine {
@@ -256,7 +256,7 @@ If object creation code is spread in the whole application, and if you need to c
 
 In Java, factory pattern is used to create instances of different classes of the same type.
 
-_![Transmission.java](/src/main/Transmissions/Transmission.java):_
+_[Transmission.java](/src/main/Transmissions/Transmission.java):_
 ```java
 // create an abstract (base) class for all future transmissions
 public abstract class Transmission {
@@ -288,7 +288,7 @@ public abstract class Transmission {
 }
 ```
 
-_![ManualTransmission.java](/src/main/Transmissions/ManualTransmission.java):_
+_[ManualTransmission.java](/src/main/Transmissions/ManualTransmission.java):_
 ```java
 // create another class that will extend "Transmission"
 public class ManualTransmission extends Transmission {
@@ -308,7 +308,7 @@ public class ManualTransmission extends Transmission {
 }
 ```
 
-_![TransmissionFactory.java](/src/main/TransmissionFactory.java):_
+_[TransmissionFactory.java](/src/main/TransmissionFactory.java):_
 ```java
 public class TransmissionFactory {
     // we get our Transmission object specifically from one of the classes that extend
@@ -376,7 +376,7 @@ TIPTRONIC transmission with 7 gears. shift time: 100.0ms
 
 **Abstract factory pattern** is considered as another layer of abstraction over factory pattern.
 
-_![Car.java](/src/main/Cars/Car.java):_
+_[Car.java](/src/main/Cars/Car.java):_
 ```java
 // create an abstract class for future car types
 public abstract class Car {
@@ -415,7 +415,7 @@ public abstract class Car {
 }
 ```
 
-_![SedanCar.java](/src/main/Cars/SedanCar.java):_
+_[SedanCar.java](/src/main/Cars/SedanCar.java):_
 ```java
 // extend the "Car" class
 public class SedanCar extends Car {
@@ -439,7 +439,7 @@ public class SedanCar extends Car {
 }
 ```
 
-_![AudiCarFactory.java](/src/main/Manufacturers/AudiCarFactory.java):_
+_[AudiCarFactory.java](/src/main/Manufacturers/AudiCarFactory.java):_
 ```java
 // a class that uses that "another layer of abstraction"
 public class AudiCarFactory {
@@ -471,7 +471,7 @@ public class AudiCarFactory {
 }
 ```
 
-_![CarFactory.java](/src/main/CarFactory.java):_
+_[CarFactory.java](/src/main/CarFactory.java):_
 ```java
 public class CarFactory {
     // make constructor private
@@ -539,7 +539,7 @@ Whenever you need **another level of abstraction over a group of factories**, yo
 A prototype is a template of any object before the actual object is constructed. In java also, it holds the same meaning. Prototype design pattern is used in scenarios where application needs to create a number of instances of a class, which has almost same state or differs very little.
 To implement prototype patter we can simply add an abstract method to our _Car.java_ class.
 
-_![Car.java](/src/main/Cars/Car.java):_
+_[Car.java](/src/main/Cars/Car.java):_
 ```java
 public abstract class Car {
     // ...
@@ -561,7 +561,7 @@ public abstract class Car {
 }
 ```
 
-_![SedanCar.java](/src/main/Cars/SedanCar.java):_
+_[SedanCar.java](/src/main/Cars/SedanCar.java):_
 ```java
 public class SedanCar extends Car {
     // ...
