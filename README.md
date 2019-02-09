@@ -62,7 +62,7 @@ public class PreferencesSingleton {
         this.manufacturedCars.add(car);
     }
 
-    ...
+    /// ...
 }
 ```
 
