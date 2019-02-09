@@ -111,7 +111,9 @@ public class Engine {
         Engine build(){
             this.horsePower = CalculateHorsePower(this.cylinders, this.fuelType, this.type);
             Engine engine = new Engine(this);
-            PreferencesSingleton.getInstance().appendManufacturedEngine(engine);
+            if (PreferencesSingleton.getInstance() != null) {
+                PreferencesSingleton.getInstance().appendManufacturedEngine(engine);
+            }
             return engine;
         }
 

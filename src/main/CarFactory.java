@@ -28,7 +28,9 @@ public class CarFactory {
                 System.out.println("[!] " + type + " factory does not exist yet!");
                 throw new NotImplementedException();
         }
-        PreferencesSingleton.getInstance().appendManufacturedCar(car);
+        if (PreferencesSingleton.getInstance() != null) {
+            PreferencesSingleton.getInstance().appendManufacturedCar(car);
+        }
         return car;
     }
 }
