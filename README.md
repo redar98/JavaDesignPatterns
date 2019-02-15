@@ -66,7 +66,7 @@ public class PreferencesSingleton {
 }
 ```
 
-#### Test Builder Pattern
+#### Test Singleton Pattern
 
 ```java
 public class Main {
